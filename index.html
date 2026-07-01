@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>uRevision | Professional Document Editing &amp; Revision Services</title>
+<meta name="description" content="uRevision offers expert academic, manuscript, resume and business document editing with fast turnaround and unlimited revision rounds.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a href="index.html" class="logo">u<span>Revision</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="order.html" class="btn btn-primary btn-sm">Get a Quote</a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow">Trusted by 12,000+ writers</span>
+        <h1>Get your writing revised by <em>expert editors</em></h1>
+        <p>From academic papers to novel manuscripts and resumes — uRevision pairs you with professional editors for clear, polished, publication-ready documents.</p>
+        <div class="hero-actions">
+          <a href="order.html" class="btn btn-primary">Get a Free Quote</a>
+          <a href="services.html" class="btn btn-outline">Explore Services</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-number"><span data-counter="45000" data-suffix="+">0</span></div>
+            <div class="stat-label">Documents Edited</div>
+          </div>
+          <div>
+            <div class="stat-number"><span data-counter="230" data-suffix="+">0</span></div>
+            <div class="stat-label">Expert Editors</div>
+          </div>
+          <div>
+            <div class="stat-number"><span data-counter="98" data-suffix="%">0</span></div>
+            <div class="stat-label">Satisfaction Rate</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="images/hero-editing.svg" alt="Illustration of a document being professionally revised">
+        <div class="hero-badge">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <strong>24-48h</strong>
+            <div class="stat-label">Average turnaround</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote / instant estimate bar -->
+  <div class="container quote-bar">
+    <form class="quote-form" id="quote-form" novalidate>
+      <div class="form-field">
+        <label for="q-doctype">Document Type</label>
+        <select id="q-doctype" name="doctype" required>
+          <option value="">Select type</option>
+          <option value="academic">Academic Paper</option>
+          <option value="manuscript">Manuscript / Book</option>
+          <option value="resume">Resume / CV</option>
+          <option value="business">Business Document</option>
+        </select>
+        <span class="field-error"></span>
+      </div>
+      <div class="form-field">
+        <label for="q-words">Word Count</label>
+        <input type="number" id="q-words" name="words" min="1" placeholder="e.g. 5000" required>
+        <span class="field-error"></span>
+      </div>
+      <div class="form-field">
+        <label for="q-deadline">Deadline</label>
+        <input type="date" id="q-deadline" name="deadline" required>
+        <span class="field-error"></span>
+      </div>
+      <div class="form-field">
+        <label for="q-email">Email</label>
+        <input type="email" id="q-email" name="email" placeholder="you@example.com" required>
+        <span class="field-error"></span>
+      </div>
+      <button type="submit" class="btn btn-primary">Get Instant Estimate</button>
+    </form>
+  </div>
+
+  <!-- Popular Services -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">What We Offer</span>
+        <h2>Popular Editing &amp; Revision Services</h2>
+        <p>Every document is matched with an editor experienced in your subject area and style guide.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <div class="card-media"><img src="images/service-academic.svg" alt="Academic paper editing"></div>
+          <div class="card-body">
+            <div class="card-meta"><span>⏱ 24-48h</span><span class="rating">★★★★★ <strong>4.9</strong></span></div>
+            <h3 class="card-title">Academic Paper Editing</h3>
+            <p class="card-desc">Grammar, structure, clarity and citation checks for essays, theses and journal submissions.</p>
+            <div class="card-footer">
+              <span class="price">$0.03<small>/word</small></span>
+              <a href="service-details.html" class="btn btn-outline btn-sm">Order Now</a>
+            </div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-media"><img src="images/service-manuscript.svg" alt="Manuscript revision"></div>
+          <div class="card-body">
+            <div class="card-meta"><span>⏱ 3-5 days</span><span class="rating">★★★★★ <strong>4.8</strong></span></div>
+            <h3 class="card-title">Manuscript Revision</h3>
+            <p class="card-desc">Developmental and line editing for novels, memoirs, and long-form manuscripts.</p>
+            <div class="card-footer">
+              <span class="price">$0.025<small>/word</small></span>
+              <a href="service-details.html" class="btn btn-outline btn-sm">Order Now</a>
+            </div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-media"><img src="images/service-resume.svg" alt="Resume editing"></div>
+          <div class="card-body">
+            <div class="card-meta"><span>⏱ 24h</span><span class="rating">★★★★★ <strong>4.9</strong></span></div>
+            <h3 class="card-title">Resume &amp; CV Editing</h3>
+            <p class="card-desc">ATS-friendly formatting and impact-driven language that gets you interviews.</p>
+            <div class="card-footer">
+              <span class="price">$49<small>/flat</small></span>
+              <a href="service-details.html" class="btn btn-outline btn-sm">Order Now</a>
+            </div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-media"><img src="images/service-proofreading.svg" alt="Proofreading service"></div>
+          <div class="card-body">
+            <div class="card-meta"><span>⏱ 12-24h</span><span class="rating">★★★★★ <strong>4.7</strong></span></div>
+            <h3 class="card-title">Proofreading</h3>
+            <p class="card-desc">Final-pass spelling, grammar and punctuation checks before you submit or publish.</p>
+            <div class="card-footer">
+              <span class="price">$0.015<small>/word</small></span>
+              <a href="service-details.html" class="btn btn-outline btn-sm">Order Now</a>
+            </div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-media"><img src="images/service-business.svg" alt="Business document editing"></div>
+          <div class="card-body">
+            <div class="card-meta"><span>⏱ 24-48h</span><span class="rating">★★★★★ <strong>4.8</strong></span></div>
+            <h3 class="card-title">Business Document Editing</h3>
+            <p class="card-desc">Reports, proposals and pitch decks refined for tone, clarity and polish.</p>
+            <div class="card-footer">
+              <span class="price">$0.03<small>/word</small></span>
+              <a href="service-details.html" class="btn btn-outline btn-sm">Order Now</a>
+            </div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-media"><img src="images/service-creative.svg" alt="Creative writing revision"></div>
+          <div class="card-body">
+            <div class="card-meta"><span>⏱ 2-4 days</span><span class="rating">★★★★★ <strong>4.9</strong></span></div>
+            <h3 class="card-title">Creative Writing Revision</h3>
+            <p class="card-desc">Short stories, poetry and scripts polished while preserving your unique voice.</p>
+            <div class="card-footer">
+              <span class="price">$0.025<small>/word</small></span>
+              <a href="service-details.html" class="btn btn-outline btn-sm">Order Now</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured pricing -->
+  <section class="bg-alt" id="pricing-preview">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Simple Pricing</span>
+        <h2>Plans For Every Kind Of Document</h2>
+        <p>Transparent, per-word or flat-rate pricing with no hidden fees.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card pricing-card reveal">
+          <h3 class="card-title">Essential</h3>
+          <p class="card-desc">Proofreading &amp; light copyedit</p>
+          <div class="price-amount">$0.015<span>/word</span></div>
+          <ul class="pricing-features">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Spelling &amp; grammar</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Punctuation checks</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 48h turnaround</li>
+          </ul>
+          <a href="pricing.html" class="btn btn-outline btn-block">View Details</a>
+        </div>
+        <div class="card pricing-card is-featured reveal">
+          <span class="card-badge" style="position:static;display:inline-block;margin-bottom:12px;">Most Popular</span>
+          <h3 class="card-title">Professional</h3>
+          <p class="card-desc">Full copyedit &amp; structure review</p>
+          <div class="price-amount">$0.03<span>/word</span></div>
+          <ul class="pricing-features">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Everything in Essential</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Structure &amp; flow editing</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Citation formatting</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 24h turnaround</li>
+          </ul>
+          <a href="pricing.html" class="btn btn-primary btn-block">View Details</a>
+        </div>
+        <div class="card pricing-card reveal">
+          <h3 class="card-title">Premium</h3>
+          <p class="card-desc">Developmental edit &amp; consult</p>
+          <div class="price-amount">$0.05<span>/word</span></div>
+          <ul class="pricing-features">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Everything in Professional</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 1:1 editor consultation</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Unlimited revision rounds</li>
+          </ul>
+          <a href="pricing.html" class="btn btn-outline btn-block">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section id="why-us">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Why Choose Us</span>
+        <h2>Editing You Can Trust</h2>
+        <p>We combine subject-matter expertise with rigorous quality control on every order.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="feature-item reveal">
+          <div class="icon-circle"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>Expert Editors</h3>
+          <p>Every editor is vetted and specializes in specific subjects and document types.</p>
+        </div>
+        <div class="feature-item reveal">
+          <div class="icon-circle"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <h3>Fast Turnaround</h3>
+          <p>Standard delivery in 24-48 hours, with rush options available.</p>
+        </div>
+        <div class="feature-item reveal">
+          <div class="icon-circle"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Confidential &amp; Secure</h3>
+          <p>Your documents are encrypted and never shared with third parties.</p>
+        </div>
+        <div class="feature-item reveal">
+          <div class="icon-circle"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+          <h3>Unlimited Revisions</h3>
+          <p>Not happy with a pass? We revise until your document is ready.</p>
+        </div>
+      </div>
+      <div class="grid grid-4 mt-32">
+        <div class="counter-item reveal">
+          <div class="counter-number"><span data-counter="45000" data-suffix="+">0</span></div>
+          <div class="counter-label">Documents Edited</div>
+        </div>
+        <div class="counter-item reveal">
+          <div class="counter-number"><span data-counter="230" data-suffix="+">0</span></div>
+          <div class="counter-label">Expert Editors</div>
+        </div>
+        <div class="counter-item reveal">
+          <div class="counter-number"><span data-counter="98" data-suffix="%">0</span></div>
+          <div class="counter-label">Satisfaction Rate</div>
+        </div>
+        <div class="counter-item reveal">
+          <div class="counter-number"><span data-counter="12" data-suffix=" yrs">0</span></div>
+          <div class="counter-label">Industry Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="bg-alt" id="how-it-works">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Our Process</span>
+        <h2>How It Works</h2>
+        <p>From upload to polished draft in four simple steps.</p>
+      </div>
+      <div class="steps">
+        <div class="step-item reveal">
+          <div class="step-number">1</div>
+          <h3>Submit Your Document</h3>
+          <p>Upload your file and tell us the service, deadline and any style guide.</p>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-number">2</div>
+          <h3>Get Matched</h3>
+          <p>We pair you with an editor experienced in your subject area.</p>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-number">3</div>
+          <h3>Review Tracked Changes</h3>
+          <p>Receive a fully tracked, commented edit for your review.</p>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-number">4</div>
+          <h3>Request Revisions</h3>
+          <p>Ask for follow-up passes until you're fully satisfied.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Testimonials</span>
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="testimonial-slider" data-autoplay="6000">
+        <div class="testimonial-track">
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-avatar"><img src="images/avatar-1.svg" alt="Anna K."></div>
+              <p class="testimonial-quote">"uRevision turned my thesis around in two days with incredibly detailed feedback. My advisor noticed the difference immediately."</p>
+              <div class="testimonial-name">Anna K.</div>
+              <div class="testimonial-role">PhD Candidate</div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-avatar"><img src="images/avatar-2.svg" alt="Marcus S."></div>
+              <p class="testimonial-quote">"The manuscript editor understood my genre perfectly. Structural notes alone were worth the price."</p>
+              <div class="testimonial-name">Marcus S.</div>
+              <div class="testimonial-role">Debut Novelist</div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-avatar"><img src="images/avatar-3.svg" alt="Riya T."></div>
+              <p class="testimonial-quote">"Rewrote my resume and I had three interview calls within a week. Worth every dollar."</p>
+              <div class="testimonial-name">Riya T.</div>
+              <div class="testimonial-role">Product Manager</div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-arrow slider-prev" aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="slider-dots"></div>
+          <button class="slider-arrow slider-next" aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery preview -->
+  <section class="bg-alt" id="gallery-preview">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Our Work</span>
+        <h2>Before &amp; After Samples</h2>
+        <p>A glimpse at how our editors transform documents.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" data-caption="Thesis — Before / After">
+          <img src="images/portfolio-1.svg" data-full="images/portfolio-1.svg" alt="Thesis before and after editing sample">
+          <div class="gallery-overlay">View Sample</div>
+        </div>
+        <div class="gallery-item reveal" data-caption="Novel Manuscript Edit">
+          <img src="images/portfolio-2.svg" data-full="images/portfolio-2.svg" alt="Novel manuscript editing sample">
+          <div class="gallery-overlay">View Sample</div>
+        </div>
+        <div class="gallery-item reveal" data-caption="Executive Resume">
+          <img src="images/portfolio-3.svg" data-full="images/portfolio-3.svg" alt="Executive resume editing sample">
+          <div class="gallery-overlay">View Sample</div>
+        </div>
+        <div class="gallery-item reveal" data-caption="Business Report">
+          <img src="images/portfolio-4.svg" data-full="images/portfolio-4.svg" alt="Business report editing sample">
+          <div class="gallery-overlay">View Sample</div>
+        </div>
+      </div>
+      <div class="text-center mt-32 reveal">
+        <a href="portfolio.html" class="btn btn-outline">View Full Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section>
+    <div class="container">
+      <div class="newsletter reveal">
+        <div>
+          <h2>Get writing tips in your inbox</h2>
+          <p>Editing advice, grammar guides and offers — once a month, no spam.</p>
+        </div>
+        <div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="form-message"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo">u<span>Revision</span></a>
+        <p>Professional editing and revision services for academic, business and creative writing — trusted by thousands of writers worldwide.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="X / Twitter">X</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="service-details.html">Academic Editing</a></li>
+          <li><a href="service-details.html">Manuscript Revision</a></li>
+          <li><a href="service-details.html">Resume Editing</a></li>
+          <li><a href="pricing.html">Pricing Plans</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 221 Baker Street, London, UK</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg> support@urevision.com</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +1 (555) 234-9821</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 uRevision. All rights reserved.</p>
+      <p>Designed for writers, by editors.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<div class="lightbox">
+  <div class="lightbox-content">
+    <img src="" alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+  <button class="lightbox-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <button class="lightbox-nav lightbox-prev" aria-label="Previous image">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <button class="lightbox-nav lightbox-next" aria-label="Next image">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/validation.js"></script>
+</body>
+</html>

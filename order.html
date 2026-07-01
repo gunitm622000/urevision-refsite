@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get a Quote | uRevision</title>
+<meta name="description" content="Upload your document and get a free, instant quote for editing and revision services from uRevision.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a href="index.html" class="logo">u<span>Revision</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="order.html" class="btn btn-primary btn-sm">Get a Quote</a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Get a Quote</div>
+      <h1>Get a Free Quote</h1>
+      <p>Upload your document, tell us a bit about it, and we'll send a fixed quote within minutes.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="two-col" style="align-items:start;">
+        <form class="form-panel reveal" id="order-form" novalidate>
+          <h2 class="mb-32">Document Details</h2>
+
+          <div class="form-field mb-32">
+            <label for="order-file">Upload Your Document</label>
+            <div class="file-drop" id="order-file-drop">
+              <input type="file" id="order-file" name="document" accept=".pdf,.doc,.docx,.txt,.rtf,.odt" required>
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6" style="margin:0 auto 10px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <p>Drag &amp; drop your file here, or click to browse</p>
+              <p style="font-size:0.78rem;margin-top:6px;">PDF, DOC, DOCX, TXT, RTF, ODT — up to 15MB</p>
+              <ul class="file-list"></ul>
+            </div>
+            <span class="field-error"></span>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="order-service">Service Type</label>
+              <select id="order-service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="academic">Academic Paper Editing</option>
+                <option value="manuscript">Manuscript Revision</option>
+                <option value="resume">Resume / CV Editing</option>
+                <option value="proofreading">Proofreading</option>
+                <option value="business">Business Document Editing</option>
+                <option value="creative">Creative Writing Revision</option>
+              </select>
+              <span class="field-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="order-words">Word / Page Count</label>
+              <input type="number" id="order-words" name="wordCount" min="1" placeholder="e.g. 3500" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="order-deadline">Deadline</label>
+              <input type="date" id="order-deadline" name="deadline" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="order-plan">Plan</label>
+              <select id="order-plan" name="plan" required>
+                <option value="">Select a plan</option>
+                <option value="essential">Essential</option>
+                <option value="professional">Professional</option>
+                <option value="premium">Premium</option>
+              </select>
+              <span class="field-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="order-name">Full Name</label>
+              <input type="text" id="order-name" name="name" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="order-email">Email Address</label>
+              <input type="email" id="order-email" name="email" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="form-field full">
+              <label for="order-notes">Additional Notes (optional)</label>
+              <textarea id="order-notes" name="notes" rows="4" placeholder="Style guide, focus areas, anything else your editor should know"></textarea>
+              <span class="field-error"></span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block mt-32">Submit Request</button>
+          <p class="form-message"></p>
+        </form>
+
+        <aside class="reveal">
+          <div class="card" style="padding:28px; margin-bottom:24px;">
+            <h3 class="card-title">Why Get a Quote?</h3>
+            <ul class="value-list mt-32">
+              <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> No obligation, no upfront payment</li>
+              <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Fixed price before work begins</li>
+              <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Response within 30 minutes, 24/7</li>
+            </ul>
+          </div>
+          <div class="card" style="padding:28px;">
+            <h3 class="card-title">Need Help Choosing?</h3>
+            <p class="card-desc mb-32">Not sure which plan fits your document? Compare options on our pricing page or reach out directly.</p>
+            <a href="pricing.html" class="btn btn-outline btn-block">Compare Plans</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo">u<span>Revision</span></a>
+        <p>Professional editing and revision services for academic, business and creative writing — trusted by thousands of writers worldwide.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="X / Twitter">X</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="service-details.html">Academic Editing</a></li>
+          <li><a href="service-details.html">Manuscript Revision</a></li>
+          <li><a href="service-details.html">Resume Editing</a></li>
+          <li><a href="pricing.html">Pricing Plans</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 221 Baker Street, London, UK</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg> support@urevision.com</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +1 (555) 234-9821</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 uRevision. All rights reserved.</p>
+      <p>Designed for writers, by editors.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/validation.js"></script>
+</body>
+</html>
