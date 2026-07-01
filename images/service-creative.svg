@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Creative Writing Revision">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c77b1f"/>
+      <stop offset="100%" stop-color="#8f5813"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <g transform="translate(200,120)" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M0 -42 L11 -13 L42 -13 L17 5 L27 36 L0 18 L-27 36 L-17 5 L-42 -13 L-11 -13 Z" fill="rgba(255,255,255,0.2)"/>
+  </g>
+  <text x="200" y="240" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle" opacity="0.92">Creative Writing Revision</text>
+</svg>

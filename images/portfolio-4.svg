@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Business Report">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9483a"/>
+      <stop offset="100%" stop-color="#c77b1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <g transform="translate(200,120)" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <rect x="-40" y="-40" width="80" height="80" rx="10" fill="rgba(255,255,255,0.1)"/><line x1="-22" y1="20" x2="-22" y2="-4"/><line x1="0" y1="20" x2="0" y2="-20"/><line x1="22" y1="20" x2="22" y2="4"/>
+  </g>
+  <text x="200" y="240" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle" opacity="0.92">Business Report</text>
+</svg>

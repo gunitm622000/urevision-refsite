@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Thesis — Before / After">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b3b6f"/>
+      <stop offset="100%" stop-color="#0ea5a4"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <g transform="translate(200,120)" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <rect x="-38" y="-50" width="76" height="100" rx="8" fill="rgba(255,255,255,0.12)"/><line x1="-22" y1="-24" x2="22" y2="-24"/><line x1="-22" y1="-4" x2="22" y2="-4"/><line x1="-22" y1="16" x2="8" y2="16"/><path d="M18 26 L34 10 L44 20 L28 36 L14 40 Z" fill="rgba(255,255,255,0.2)"/>
+  </g>
+  <text x="200" y="240" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle" opacity="0.92">Thesis — Before / After</text>
+</svg>
